@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABDOUL RAZAK SAWADOGO | Blog & Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">SAARA.cr<span>.dev</span></div>
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <span></span><span></span><span></span>
+                </div>
+                <div class="nav-links">
+                    <a href="#accueil" class="lang" key="home">Accueil</a>
+                    <a href="#projets" class="lang" key="projects">Projets</a>
+                    <a href="#blog" class="lang" key="blog">Blog</a>
+                    <a href="#contact" class="lang" key="contact">Contact</a>
+                    <div class="language-switcher">
+                        <button onclick="changeLanguage('fr')" class="active">FR</button>
+                        <button onclick="changeLanguage('en')">EN</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="accueil" class="hero">
+        <div class="container">
+            <h1 class="lang" key="hero_title">Salut, je suis Abdoul Razak</h1>
+            <p class="lang" key="hero_text">Étudiant passionné par l'intelligence artificielle ,machine learninget l'innovation. Bienvenue sur mon espace de partage.</p>
+            <div class="hero-btns">
+                <a href="#https://github.com/razaksaw10" class="btn lang" key="see_work">Voir mes projets</a>
+                <a href="https://wa.me/+905364704110" class="btn btn-outline lang" key="contact_me">Me contacter</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projets" class="products">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="lang" key="featured_projects">Projets à la une</h2>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="product-info">
+                        <h3 class="lang" key="project1_name">Cyber AEBT</h3>
+                        <p class="lang" key="project1_desc">Plateforme numérique pour les étudiants burkinabè en Turquie.</p>
+                        <ul class="tech-stack">
+                            <li>#React</li>
+                            <li>#NestJS</li>
+                        </ul>
+                        <a href="#" class="btn-small lang" key="view_details">Détails</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="product-info">
+                        <h3 class="lang" key="project2_name">Alulai Trade Site</h3>
+                        <p class="lang" key="project2_desc">Interface moderne pour une entreprise de négoce international.</p>
+                        <ul class="tech-stack">
+                            <li>#HTML/CSS</li>
+                            <li>#JavaScript</li>
+                        </ul>
+                        <a href="#" class="btn-small lang" key="view_details">Détails</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="about-section">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="lang" key="blog_title">Articles Récents</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 class="lang" key="article1_title">Pourquoi j'ai choisi React pour Cyber AEBT</h3>
+                    <p class="lang" key="article1_text">Dans cet article, j'explique les avantages des frameworks modernes pour les projets associatifs...</p>
+                    <a href="#" class="lang" key="read_more">Lire la suite →</a>
+                    <hr>
+                    <h3 class="lang" key="article2_title">Étudier en Turquie : Mon parcours</h3>
+                    <p class="lang" key="article2_text">Retour sur mon expérience et conseils pour les nouveaux étudiants...</p>
+                    <a href="#" class="lang" key="read_more">Lire la suite →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-cta">
+        <div class="container">
+            <h2 class="lang" key="ready_to_talk">Une idée ? Un projet ?</h2>
+            <p class="lang" key="contact_sub">N'hésitez pas à me contacter pour discuter tech ou collaboration.</p>
+            <a href="https://wa.me/+905364704110" class="btn lang" key="whatsapp_btn">Discuter sur WhatsApp</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                <p>&copy; 2026 Abdoul Razak SAWADOGO. <span class="lang" key="rights">Tous droits réservés.</span></p>
+                <div class="social-links" style="margin-top: 20px;">
+                    <a href="https://github.com/razaksaw10">GitHub</a> | <a href="https://www.linkedin.com/in/abdoul-razak-sawadogo-982b0a2b2?">LinkedIn</a> | <a href="#">İntagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const translations = {
+            fr: {
+                home: "Accueil",
+                projects: "Projets",
+                blog: "Blog",
+                contact: "Contact",
+                hero_title: "Salut, je suis Zakaria",
+                hero_text: "Étudiant passionné par le développement web et l'innovation. Bienvenue sur mon espace de partage.",
+                see_work: "Voir mes projets",
+                contact_me: "Me contacter",
+                featured_projects: "Projets à la une",
+                project1_name: "Cyber AEBT",
+                project1_desc: "Plateforme numérique pour les étudiants burkinabè en Turquie.",
+                project2_name: "Alulai Trade Site",
+                project2_desc: "Interface moderne pour une entreprise de négoce international.",
+                view_details: "Détails",
+                blog_title: "Articles Récents",
+                article1_title: "Pourquoi j'ai choisi React pour Cyber AEBT",
+                article1_text: "Mon analyse technique sur le choix de la stack pour l'association.",
+                article2_title: "Étudier en Turquie : Mon parcours",
+                article2_text: "Retour sur mon expérience et conseils pour les nouveaux.",
+                read_more: "Lire la suite",
+                ready_to_talk: "Une idée ? Un projet ?",
+                contact_sub: "N'hésitez pas à me contacter pour discuter tech ou collaboration.",
+                whatsapp_btn: "Discuter sur WhatsApp",
+                rights: "Tous droits réservés."
+            },
+            en: {
+                home: "Home",
+                projects: "Projects",
+                blog: "Blog",
+                contact: "Contact",
+                hero_title: "Hi, I'm Zakaria",
+                hero_text: "Student passionate about web development and innovation. Welcome to my space.",
+                see_work: "See my work",
+                contact_me: "Contact me",
+                featured_projects: "Featured Projects",
+                project1_name: "Cyber AEBT",
+                project1_desc: "Digital platform for Burkinabè students in Turkey.",
+                project2_name: "Alulai Trade Site",
+                project2_desc: "Modern interface for an international trading company.",
+                view_details: "Details",
+                blog_title: "Recent Posts",
+                article1_title: "Why I chose React for Cyber AEBT",
+                article1_text: "Technical analysis on stack choice for the association.",
+                article2_title: "Studying in Turkey: My Journey",
+                article2_text: "Feedback on my experience and advice for newcomers.",
+                read_more: "Read more",
+                ready_to_talk: "Idea? Project?",
+                contact_sub: "Feel free to contact me for tech discussion or collaboration.",
+                whatsapp_btn: "Chat on WhatsApp",
+                rights: "All rights reserved."
+            }
+        };
+
+        function changeLanguage(lang) {
+            const elements = document.querySelectorAll('.lang');
+            elements.forEach(element => {
+                const key = element.getAttribute('key');
+                if (translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+            document.querySelectorAll('.language-switcher button').forEach(btn => btn.classList.remove('active'));
+            document.querySelector(`.language-switcher button[onclick="changeLanguage('${lang}')"]`).classList.add('active');
+            localStorage.setItem('language', lang);
+            document.documentElement.lang = lang;
+        }
+
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedLang = localStorage.getItem('language') || 'fr';
+            changeLanguage(savedLang);
+        });
+    </script>
+</body>
+</html>
